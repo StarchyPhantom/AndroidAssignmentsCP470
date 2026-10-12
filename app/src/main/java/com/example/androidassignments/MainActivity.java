@@ -1,6 +1,8 @@
 package com.example.androidassignments;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,15 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void goToLogin(View view) {
+        // go back to main page  in response to button
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+    public void goToListItems(View view) {
+        // go back to main page  in response to button
+        Intent intent = new Intent(this, ListItemsActivity.class);
+        startActivity(intent);
     }
 }

@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.779" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,5 +31,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.366" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="7dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="goToLogin"
+        android:text="@string/ToLoginText"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="74dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="goToListItems"
+        android:text="@string/ToListItemsText"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
