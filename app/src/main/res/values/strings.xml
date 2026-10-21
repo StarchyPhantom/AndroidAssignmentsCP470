@@ -10,7 +10,15 @@
     <string name="SwitchText">What does this do?</string>
     <string name="RadioText">Radio Button</string>
     <string name="CheckText">Checkbox</string>
-    <string name="ToMainText">To Main</string>
-    <string name="ToLoginText">To Login</string>
+    <string name="ToMainText">To Main (Debug, ignore me)</string>
+    <string name="ToLoginText">To Login (Debug, ignore me)</string>
     <string name="ToListItemsText">To ListItems</string>
+    <string name="switch_on">Switch is On</string>
+    <string name="switch_off">Switch is Off</string>
+    <string name="dialog_message">Exit?</string>
+    <string name="dialog_title">Exit this activity?</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Never mind</string>
+    <string name="ListItemsActivityReturned">ListItemsActivity passed: </string>
+    <string name="ListItemsActivityResponse">Here is my response</string>
 </resources>

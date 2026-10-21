@@ -11,7 +11,15 @@
     <string name="SwitchText">Qu\'est qu\'il fait?</string>
     <string name="RadioText">Bouton de la radio</string>
     <string name="CheckText">Case à cocher</string>
-    <string name="ToMainText">À Principal</string>
-    <string name="ToLoginText">À Login</string>
+    <string name="ToMainText">À Principal (Debug, ignore me)</string>
+    <string name="ToLoginText">À Login (Debug, ignore me)</string>
     <string name="ToListItemsText">À Liste de les Items</string>
+    <string name="switch_on">Interrupteur est allumé</string>
+    <string name="switch_off">Interrupteur est éteint</string>
+    <string name="dialog_message">Sors?</string>
+    <string name="dialog_title">Sors de ce activité?</string>
+    <string name="ok">D\'accord</string>
+    <string name="cancel">Ce n\'est pas grave</string>
+    <string name="ListItemsActivityReturned">ListItemsActivity passé: </string>
+    <string name="ListItemsActivityResponse">C\'est ma réponse</string>
 </resources>

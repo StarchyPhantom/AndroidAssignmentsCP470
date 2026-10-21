@@ -17,6 +17,7 @@
         android:text="@string/LoginText" />
 
     <EditText
+        android:id="@+id/LoginNameField"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:autofillHints="username"
@@ -31,12 +32,19 @@
         android:text="@string/PasswordText" />
 
     <EditText
+        android:id="@+id/LoginPasswordField"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:autofillHints="username"
         android:hint="@string/PasswordName"
         android:inputType="textPassword"
         android:text="@string/PasswordName"></EditText>
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LoginText" />
 
     <Button
         android:layout_width="200dp"
@@ -49,4 +57,5 @@
         android:onClick="goToMain"
         android:text="@string/ToMainText"
         android:visibility="visible" />
+
 </LinearLayout>
