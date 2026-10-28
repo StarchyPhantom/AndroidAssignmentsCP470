@@ -1,8 +1,10 @@
 package com.example.androidassignments;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -35,6 +37,10 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         Button loginButton = findViewById(R.id.LoginButton);
         loginName = getSharedPreferences("MyPrefs", MODE_PRIVATE).getString("LoginNameField", "email@domain.com");
@@ -67,8 +73,14 @@ public class LoginActivity extends AppCompatActivity {
                         new AlertDialog.Builder(LoginActivity.this);
                 builder.setTitle("Invalid Email or empty password");
                 // builder.setIcon(R.drawable.ic_launcher_foreground);
-                builder.show();
+                builder.setNegativeButton(getString(R.string.DialogCancel), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
                 builder.setCancelable(true);
+                builder.show();
                 }
             }
         });

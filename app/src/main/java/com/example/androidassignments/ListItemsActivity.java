@@ -72,7 +72,7 @@ public class ListItemsActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
-                    // 2. Chain together various setter methods to set the dialog characteristics
+                    // Chain together various setter methods to set the dialog characteristics
                     builder.setMessage(R.string.dialog_message) //Add a dialog message to strings.xml
 
                             .setTitle(R.string.dialog_title)

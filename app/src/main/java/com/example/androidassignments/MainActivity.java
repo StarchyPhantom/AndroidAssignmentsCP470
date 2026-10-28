@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -29,12 +28,22 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button OGButton = findViewById(R.id.button);
+        Button OGButton = findViewById(R.id.buttonIsMe);
 
         OGButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListItemsActivity.class);
                 startActivityForResult(intent, 10);
+            }
+        });
+
+        Button chatButton = findViewById(R.id.chatButton);
+
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i("MainActivity", "User clicked Start Chat");
+                Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+                startActivityForResult(intent, 100);
             }
         });
     }

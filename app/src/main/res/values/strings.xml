@@ -12,7 +12,7 @@
     <string name="CheckText">Checkbox</string>
     <string name="ToMainText">To Main (Debug, ignore me)</string>
     <string name="ToLoginText">To Login (Debug, ignore me)</string>
-    <string name="ToListItemsText">To ListItems</string>
+    <string name="ToListItemsText">To ListItems (Debug, ignore me)</string>
     <string name="switch_on">Switch is On</string>
     <string name="switch_off">Switch is Off</string>
     <string name="dialog_message">Exit?</string>
@@ -21,4 +21,8 @@
     <string name="cancel">Never mind</string>
     <string name="ListItemsActivityReturned">ListItemsActivity passed: </string>
     <string name="ListItemsActivityResponse">Here is my response</string>
+    <string name="StartChatButtonText">Start Chat</string>
+    <string name="MessageHint">Type a message\.\.\.</string>
+    <string name="SendText">Send</string>
+    <string name="DialogCancel">Cancel</string>
 </resources>
